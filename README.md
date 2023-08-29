@@ -33,13 +33,13 @@
 ## Configure SSL Certificate for GitLab Server in Ubuntu 20. 04, 22.04 OS
 * Documentation Link: https://computingforgeeks.com/how-to-secure-gitlab-server-with-ssl-certificate/?expand_article=1
 * After purchasing your certificate, download the Certificate file and put it with the private key to the /etc/gitlab/ssl/ directory.
-
+    
       /etc/gitlab/ssl/key.pem---your file
       /etc/gitlab/ssl/cert.pem--yor file
      
 Then configure SSL settings on your /etc/gitlab/gitlab.rb file. 
 First, change external URL from http to https
-external_url 'https://git.example.com'
+external_url 'https://gitlab.ibos.io.com'
 Under the external_url line paste the below code & save the file
 GitLab NGINX section, enable Nginx and provide SSL key and certificate paths.
 
