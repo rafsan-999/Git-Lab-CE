@@ -29,6 +29,31 @@ youtube link: https://www.youtube.com/watch?v=vU8Nbf85rVA
     gitlab-ctl stop
     gitlab-ctl start
     gitlab-ctl restart logrotate
+    
 ## Configure SSL Certificate for GitLab Server in Ubuntu 20. 04, 22.04 OS
 Documentation Link: https://computingforgeeks.com/how-to-secure-gitlab-server-with-ssl-certificate/?expand_article=1
+After purchasing your certificate, download the Certificate file and put it with the private key to the /etc/gitlab/ssl/ directory.
+
+     /etc/gitlab/ssl/key.pem---your file
+    /etc/gitlab/ssl/cert.pem--yor file
+     
+Then configure SSL settings on your /etc/gitlab/gitlab.rb file. First, change external URL from http to https
+external_url 'https://git.example.com'
+Under the ## GitLab NGINX section, enable Nginx and provide SSL key and certificate paths.
+
+    ## GitLab NGINX
+    
+    nginx['enable'] = true
+    nginx['client_max_body_size'] = '250m'
+    nginx['redirect_http_to_https'] = true
+    
+    nginx['ssl_certificate'] = "/etc/gitlab/ssl/cert.pem"
+    nginx['ssl_certificate_key'] = "/etc/gitlab/ssl/key.pem"
+    nginx['ssl_protocols'] = "TLSv1.1 TLSv1.2 TLSv1.3"
+When done, run the following command to effect the changes:
+
+    sudo gitlab-ctl reconfigure
+Wait for the command to finish executing then visit the URL https://gitlab.ibos.io to Login to your GitLab dashboard.
+
+        
 
