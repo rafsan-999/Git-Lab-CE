@@ -40,8 +40,8 @@
 Then configure SSL settings on your /etc/gitlab/gitlab.rb file. 
 * First, change external URL from http to https
 * external_url 'https://gitlab.ibos.io.com'
-Under the external_url line paste the below code & save the file
-GitLab NGINX section, enable Nginx and provide SSL key and certificate paths.
+* Under the external_url line paste the below code & save the file
+* GitLab NGINX section, enable Nginx and provide SSL key and certificate paths.
 
       ## GitLab NGINX
       nginx['enable'] = true
