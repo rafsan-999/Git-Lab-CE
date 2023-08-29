@@ -1,4 +1,5 @@
 # How To Install GitLab CE on Ubuntu 22.04 
+Documentation Link: https://technologyrss.com/how-to-install-gitlab-ce-on-ubuntu-22-04/
 #### Step01: Server update and upgrade then add repo.
     lsb_release -d && ip r
     apt update && apt upgrade -y
@@ -27,3 +28,6 @@
     gitlab-ctl stop
     gitlab-ctl start
     gitlab-ctl restart logrotate
+Configure SSL Certificate for GitLab Server in Ubuntu 20. 04, 22.04 OS
+Documentation Link: https://computingforgeeks.com/how-to-secure-gitlab-server-with-ssl-certificate/?expand_article=1
+
