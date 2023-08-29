@@ -1,0 +1,9 @@
+## GitLab NGINX
+
+nginx['enable'] = true
+nginx['client_max_body_size'] = '250m'
+nginx['redirect_http_to_https'] = true
+
+nginx['ssl_certificate'] = "/etc/gitlab/ssl/cert.pem"
+nginx['ssl_certificate_key'] = "/etc/gitlab/ssl/key.pem"
+nginx['ssl_protocols'] = "TLSv1.1 TLSv1.2 TLSv1.3"
