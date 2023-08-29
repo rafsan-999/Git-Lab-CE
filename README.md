@@ -1,6 +1,6 @@
 # How To Install GitLab CE on Ubuntu 22.04 
-Documentation Link: https://technologyrss.com/how-to-install-gitlab-ce-on-ubuntu-22-04/
-youtube link: https://www.youtube.com/watch?v=vU8Nbf85rVA
+* Documentation Link: https://technologyrss.com/how-to-install-gitlab-ce-on-ubuntu-22-04/
+* youtube link: https://www.youtube.com/watch?v=vU8Nbf85rVA
 #### Step01: Server update and upgrade then add repo.
     lsb_release -d && ip r
     apt update && apt upgrade -y
@@ -31,11 +31,11 @@ youtube link: https://www.youtube.com/watch?v=vU8Nbf85rVA
     gitlab-ctl restart logrotate
     
 ## Configure SSL Certificate for GitLab Server in Ubuntu 20. 04, 22.04 OS
-Documentation Link: https://computingforgeeks.com/how-to-secure-gitlab-server-with-ssl-certificate/?expand_article=1
+* Documentation Link: https://computingforgeeks.com/how-to-secure-gitlab-server-with-ssl-certificate/?expand_article=1
 After purchasing your certificate, download the Certificate file and put it with the private key to the /etc/gitlab/ssl/ directory.
 
-     /etc/gitlab/ssl/key.pem---your file
-    /etc/gitlab/ssl/cert.pem--yor file
+      /etc/gitlab/ssl/key.pem---your file
+      /etc/gitlab/ssl/cert.pem--yor file
      
 Then configure SSL settings on your /etc/gitlab/gitlab.rb file. First, change external URL from http to https
 external_url 'https://git.example.com'
