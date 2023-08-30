@@ -13,7 +13,7 @@
 Edit the GitLab configuration file to set the your URL for your GitLab instance:
 
     sudo vi /etc/gitlab/gitlab.rb
-#####  Add your server ip address into rb file.
+#####  Add your server ip address into gitlab.rb file.
     external_url 'http://10.209.99.119'
 #### Step 03: Then configure gitlab-cli
     sudo gitlab-ctl reconfigure
