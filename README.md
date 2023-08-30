@@ -16,7 +16,7 @@
     apt install gitlab-ce
     vi /etc/gitlab/gitlab.rb
 #####  Add your server ip address into rb file.
-    external_url 'Your Server ip'
+    external_url 'http://10.209.99.119'
 #### Step 03: Then configure gitlab-cli
     sudo gitlab-ctl reconfigure
 #### Check status using below command.
