@@ -17,8 +17,6 @@ Edit the GitLab configuration file to set the your URL for your GitLab instance:
     external_url 'http://10.209.99.119'
 #### Step 03: Then configure gitlab-cli
     sudo gitlab-ctl reconfigure
-#### Check status using below command.
-    gitlab-ctl status
 ## Collect root password from below command
     cat /etc/gitlab/initial_root_password
 ###  (Optional) This is not related in Installation Process Check below command for manage GitLab.
