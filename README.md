@@ -19,6 +19,9 @@ Edit the GitLab configuration file to set the your URL for your GitLab instance:
     sudo gitlab-ctl reconfigure
 ## Collect root password from below command
     cat /etc/gitlab/initial_root_password
+# Install Specific version of gitlab-ce on Ubuntu:
+    sudo EXTERNAL_URL="http://10.209.99.112" apt-get install gitlab-ce=16.3.4-ce.0
+
 ###  (Optional) This is not related in Installation Process Check below command for manage GitLab.
     gitlab-rake gitlab:check
     gitlab-ctl status
@@ -54,6 +57,3 @@ When done, run the following command to effect the changes:
     sudo gitlab-ctl reconfigure
     
 Wait for the command to finish executing then visit the URL https://gitlab.ibos.io to Login to your GitLab dashboard.
-
-        
-
