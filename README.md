@@ -21,6 +21,10 @@ Edit the GitLab configuration file to set the your URL for your GitLab instance:
     cat /etc/gitlab/initial_root_password
 # Install Specific version of gitlab-ce on Ubuntu:
     sudo EXTERNAL_URL="http://10.209.99.112" apt-get install gitlab-ce=16.3.4-ce.0
+## Pin the version to limit auto-updates: 
+    sudo apt-mark hold gitlab-ce
+## Show what packages are held back: 
+    sudo apt-mark showhold
 
 ###  (Optional) This is not related in Installation Process Check below command for manage GitLab.
     gitlab-rake gitlab:check
