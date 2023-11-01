@@ -27,7 +27,6 @@ Edit the GitLab configuration file to set the your URL for your GitLab instance:
     sudo apt-mark showhold
 
 ###  (Optional) This is not related in Installation Process Check below command for manage GitLab.
-    gitlab-rake gitlab:check
     gitlab-ctl status
     gitlab-ctl start
     gitlab-ctl stop
@@ -65,6 +64,20 @@ Wait for the command to finish executing then visit the URL https://gitlab.ibos.
 
 
 ```sh
-#rererer
-git clone https://github.com/Tanvir-Pandit/Real-Time-Pose-Detection.git
+# Start all GitLab components
+sudo gitlab-ctl start
+
+# Stop all GitLab components
+sudo gitlab-ctl stop
+
+# Restart all GitLab components
+sudo gitlab-ctl restart
+
+
+
+
+
+
+
+
 
