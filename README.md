@@ -62,3 +62,9 @@ When done, run the following command to effect the changes:
     sudo gitlab-ctl reconfigure
     
 Wait for the command to finish executing then visit the URL https://gitlab.ibos.io to Login to your GitLab dashboard.
+
+
+```sh
+#rererer
+git clone https://github.com/Tanvir-Pandit/Real-Time-Pose-Detection.git
+
