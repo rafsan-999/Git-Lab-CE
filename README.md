@@ -29,8 +29,9 @@ Edit the GitLab configuration file to set the your URL for your GitLab instance:
 ###  (Optional) This is not related in Installation Process Check below command for manage GitLab.
     gitlab-rake gitlab:check
     gitlab-ctl status
-    gitlab-ctl stop
     gitlab-ctl start
+    gitlab-ctl stop
+    gitlab-ctl restart
     gitlab-ctl restart logrotate
     
 ## Configure SSL Certificate for GitLab Server in Ubuntu 20. 04, 22.04 OS
